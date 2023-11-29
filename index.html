@@ -2,119 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Embark on an unforgettable safari adventure with Jawai Leopard Safaris. Your gateway to the untamed wilderness of Rajasthan. Explore exclusive leopard safaris, wildlife photography expeditions, and conservation initiatives.">
-    <meta name="keywords" content="Jawai Leopard Safaris, wildlife tours, leopard safari, Rajasthan, wildlife photography, conservation, adventure tours">
-    <meta name="author" content="Kavindra Choudhary">
-
-    <title>Jawai Leopard Safaris</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: 'Arial', sans-serif;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1;
-        }
-
-        .logo img {
-            width: 80px; /* Adjust the size as needed */
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .content-container {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            color: #fff;
-            z-index: 1;
-        }
-
-        .content-container h1,
-        .content-container h2,
-        .content-container p,
-        .quote {
-            color: #fff;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            flex-wrap: wrap;
-            z-index: 1;
-        }
-
-        .image-container img {
-            width: 45%;
-            border-radius: 8px;
-            margin: 10px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Safari Experience</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <video autoplay loop muted>
-        <source src="video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="leopard-logo.png" alt="Leopard Logo">
+                <span>Your Safari</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="logo-container">
-        <div class="logo">
-            <img src="leopard-logo.png" alt="Leopard Logo">
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Your Safari Adventure Begins Here</h1>
+            <p>Embark on a journey through the wild landscapes of Jawai, Rajasthan.</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
-    </div>
+    </section>
 
-    <div class="content-container">
-        <h1 class="display-4">Jawai Leopard Safaris</h1>
-        <p class="lead">Your Gateway to the Untamed Wilderness</p>
-
-        <h2>About Us</h2>
-        <p class="lead">Embark on an unforgettable adventure with Jawai Leopard Safaris, where expert guides lead you through the rocky terrains of Jawai, Rajasthan, offering exclusive leopard safaris that provide an up-close encounter with these majestic creatures. Immerse yourself in the wild beauty of Jawai, where rugged landscapes meet the grace of leopards.</p>
-
-        <div class="quote-container">
-            <p class="quote">"Oh my god, what a magical experience!"</p>
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Explore the untamed wilderness with our expert guides, offering exclusive safari experiences that provide an up-close encounter with majestic creatures.</p>
         </div>
+    </section>
 
+    <section id="gallery">
         <h2>Gallery</h2>
-        <div class="image-container">
-            <img src="img1.jpeg" alt="Leopard Safari Image 1" class="img-fluid">
-            <img src="img2.jpeg" alt="Leopard Safari Image 2" class="img-fluid">
-            <img src="img3.jpeg" alt="Leopard Safari Image 2" class="img-fluid">
+        <!-- Add your gallery images here -->
+        <div class="gallery-images">
+            <img src="img1.jpeg" alt="Leopard Safari Image 1">
+            <img src="img2.jpeg" alt="Leopard Safari Image 2">
             <!-- Add more images as needed -->
         </div>
-    </div>
+    </section>
 
-    <!-- Bootstrap JS and jQuery (optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <section id="testimonials">
+        <h2>What Our Visitors Say</h2>
+        <div class="testimonial">
+            <blockquote>"An amazing experience! The guides were knowledgeable, and the wildlife encounters were breathtaking."</blockquote>
+            <cite>- John Doe</cite>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Connect with us on social media and feel free to reach out via WhatsApp, email, or phone call:</p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/YourSafari" target="_blank">Facebook</a>
+                <a href="https://twitter.com/YourSafari" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/YourSafari" target="_blank">Instagram</a>
+            </div>
+
+            <p>WhatsApp: <a href="https://wa.me/1234567890">123-456-7890</a></p>
+            <p>Email: <a href="mailto:info@yoursafari.com">info@yoursafari.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Safari. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
