@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Embark on an unforgettable adventure with Jawai Leopard Safaris, your gateway to the untamed wilderness of Rajasthan. Explore exclusive leopard safaris, wildlife photography expeditions, and conservation initiatives.">
+    <meta name="description" content="Embark on an unforgettable safari adventure with Jawai Leopard Safaris. Your gateway to the untamed wilderness of Rajasthan. Explore exclusive leopard safaris, wildlife photography expeditions, and conservation initiatives.">
     <meta name="keywords" content="Jawai Leopard Safaris, wildlife tours, leopard safari, Rajasthan, wildlife photography, conservation, adventure tours">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Kavindra Choudhary">
 
     <title>Jawai Leopard Safaris</title>
     
@@ -15,72 +15,86 @@
     <!-- Custom Styles -->
     <style>
         body {
-            background-color: #f5f5f5;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .quote-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .quote {
-            font-style: italic;
-            font-size: 1.2em;
-        }
-
-        .user-experience {
-            margin-bottom: 30px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
         }
 
         video {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
 
-        .social-icons {
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .logo img {
+            width: 80px; /* Adjust the size as needed */
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .content-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             text-align: center;
-            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: #fff;
+            z-index: 1;
         }
 
-        .social-icons a {
-            margin: 0 10px;
-            color: #333;
-            font-size: 24px;
+        .content-container h1,
+        .content-container h2,
+        .content-container p,
+        .quote {
+            color: #fff;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+
+        .image-container img {
+            width: 45%;
+            border-radius: 8px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <video autoplay loop muted>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="logo-container">
+        <div class="logo">
+            <img src="leopard-logo.png" alt="Leopard Logo">
+        </div>
+    </div>
+
+    <div class="content-container">
         <h1 class="display-4">Jawai Leopard Safaris</h1>
         <p class="lead">Your Gateway to the Untamed Wilderness</p>
-    </header>
 
-    <section class="container">
         <h2>About Us</h2>
         <p class="lead">Embark on an unforgettable adventure with Jawai Leopard Safaris, where expert guides lead you through the rocky terrains of Jawai, Rajasthan, offering exclusive leopard safaris that provide an up-close encounter with these majestic creatures. Immerse yourself in the wild beauty of Jawai, where rugged landscapes meet the grace of leopards.</p>
 
@@ -88,51 +102,19 @@
             <p class="quote">"Oh my god, what a magical experience!"</p>
         </div>
 
-        <div class="user-experience">
-            <h3>User Experience</h3>
-            <p><strong>Kavindra Choudhary:</strong> "Jawai Leopard Safaris exceeded my expectations. The guides were knowledgeable, and the wildlife encounters were breathtaking. A must for nature enthusiasts!"</p>
-            <!-- Add more user experiences as needed -->
-        </div>
-
-        <div class="embed-responsive embed-responsive-16by9">
-            <video controls autoplay loop class="embed-responsive-item">
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
         <h2>Gallery</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img1.jpeg" alt="Leopard Safari Image 1" class="img-fluid">
-            </div>
-            <div class="col-md-4">
-                <img src="img2.jpeg" alt="Leopard Safari Image 2" class="img-fluid">
-            </div>
-            <div class="col-md-4">
-                <img src="img3.jpeg" alt="Leopard Safari Image 3" class="img-fluid">
-            </div>
+        <div class="image-container">
+            <img src="img1.jpeg" alt="Leopard Safari Image 1" class="img-fluid">
+            <img src="img2.jpeg" alt="Leopard Safari Image 2" class="img-fluid">
+            <img src="img3.jpeg" alt="Leopard Safari Image 2" class="img-fluid">
+            <!-- Add more images as needed -->
         </div>
-    </section>
-
-    <section class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <!-- Add more social media links as needed -->
-    </section>
-
-    <footer>
-        <p class="mb-0">&copy; 2023 Jawai Leopard Safaris</p>
-    </footer>
+    </div>
 
     <!-- Bootstrap JS and jQuery (optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Font Awesome Icons (optional) -->
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
