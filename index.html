@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Safari Experience</title>
+    <title>Jawai Leopard Safaris</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,71 +14,115 @@
         <nav>
             <div class="logo">
                 <img src="leopard-logo.png" alt="Leopard Logo">
-                <span>Your Safari</span>
+                <span>Jawai Leopard Safaris</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/gallery">Gallery</a></li>
+                <li><a href="#/testimonials">Testimonials</a></li>
+                <li><a href="#/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Your Safari Adventure Begins Here</h1>
-            <p>Embark on a journey through the wild landscapes of Jawai, Rajasthan.</p>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>Explore the untamed wilderness with our expert guides, offering exclusive safari experiences that provide an up-close encounter with majestic creatures.</p>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <!-- Add your gallery images here -->
-        <div class="gallery-images">
-            <img src="img1.jpeg" alt="Leopard Safari Image 1">
-            <img src="img2.jpeg" alt="Leopard Safari Image 2">
-            <!-- Add more images as needed -->
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <h2>What Our Visitors Say</h2>
-        <div class="testimonial">
-            <blockquote>"An amazing experience! The guides were knowledgeable, and the wildlife encounters were breathtaking."</blockquote>
-            <cite>- John Doe</cite>
-        </div>
-        <!-- Add more testimonials as needed -->
-    </section>
-
-    <section id="contact">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Connect with us on social media and feel free to reach out via WhatsApp, email, or phone call:</p>
-
-            <div class="social-links">
-                <a href="https://www.facebook.com/YourSafari" target="_blank">Facebook</a>
-                <a href="https://twitter.com/YourSafari" target="_blank">Twitter</a>
-                <a href="https://www.instagram.com/YourSafari" target="_blank">Instagram</a>
-            </div>
-
-            <p>WhatsApp: <a href="https://wa.me/1234567890">123-456-7890</a></p>
-            <p>Email: <a href="mailto:info@yoursafari.com">info@yoursafari.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-        </div>
-    </section>
+    <div id="app">
+        <router-view></router-view>
+    </div>
 
     <footer>
-        <p>&copy; 2023 Your Safari. All rights reserved.</p>
+        <p>&copy; 2023 Jawai Leopard Safaris. All rights reserved.</p>
     </footer>
+
+    <script>
+        const Home = {
+            template: `
+                <section id="hero">
+                    <div class="hero-content">
+                        <h1>Embark on an Unforgettable Leopard Safari Adventure</h1>
+                        <p>Explore the untamed wilderness of Jawai, Rajasthan, with our expert guides. Witness the beauty of leopards in their natural habitat.</p>
+                        <a href="#/contact" class="cta-button">Book Your Safari</a>
+                    </div>
+                </section>
+            `
+        };
+
+        const About = {
+            template: `
+                <section id="about">
+                    <div class="about-content">
+                        <h2>About Jawai Leopard Safaris</h2>
+                        <p>At Jawai Leopard Safaris, we pride ourselves on providing exclusive safari experiences. Our expert guides lead you through the rocky terrains of Jawai, Rajasthan, offering an up-close encounter with majestic leopards.</p>
+                    </div>
+                </section>
+            `
+        };
+
+        const Gallery = {
+            template: `
+                <section id="gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-images">
+                        <img src="img1.jpeg" alt="Leopard Safari Image 1">
+                        <img src="img2.jpeg" alt="Leopard Safari Image 2">
+                        <img src="img3.jpeg" alt="Leopard Safari Image 2">
+                        <!-- Add more images as needed -->
+                    </div>
+                </section>
+            `
+        };
+
+        const Testimonials = {
+            template: `
+                <section id="testimonials">
+                    <h2>What Our Visitors Say</h2>
+                    <div class="testimonial">
+                        <blockquote>"An amazing experience! The guides were knowledgeable, and the wildlife encounters were breathtaking."</blockquote>
+                        <cite>- John Doe</cite>
+                    </div>
+                    <!-- Add more testimonials as needed -->
+                </section>
+            `
+        };
+
+        const Contact = {
+            template: `
+                <section id="contact">
+                    <div class="contact-info">
+                        <h2>Contact Jawai Leopard Safaris</h2>
+                        <p>Connect with us and plan your safari adventure:</p>
+
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/JawaiLeopardSafaris" target="_blank">Facebook</a>
+                            <a href="https://twitter.com/JawaiSafaris" target="_blank">Twitter</a>
+                            <a href="https://www.instagram.com/JawaiLeopardSafaris" target="_blank">Instagram</a>
+                        </div>
+
+                        <p>WhatsApp: <a href="https://wa.me/8949192223">8949192223</a></p>
+                        <p>Email: <a href="mailto:wildjawaileopardtours@gmail.com">wildjawaileopardtours@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+﻿﻿918949192223">+91 8949192223</a></p>
+                    </div>
+                </section>
+            `
+        };
+
+        const routes = [
+            { path: '/', component: Home },
+            { path: '/about', component: About },
+            { path: '/gallery', component: Gallery },
+            { path: '/testimonials', component: Testimonials },
+            { path: '/contact', component: Contact }
+        ];
+
+        const router = new VueRouter({
+            routes
+        });
+
+        new Vue({
+            el: '#app',
+            router
+        });
+    </script>
 
 </body>
 </html>
